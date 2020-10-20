@@ -90,10 +90,10 @@ if (idk[i] < memory){
   println("  ");
 }
 
-i = 2;
+i = 3;
 memory = idk[i];
-swap = idk[i];
-if ( swap > compare){
+swap = idk[2];
+if ( swap > idk[i]){
   idk[i] = memory;
   idk[i] = swap;
   //idk[i] = ;
@@ -101,5 +101,19 @@ if ( swap > compare){
   //println(memory);
   println("number",swap , "in position", index, "memory bank", memory);
   printArray(idk);
+  println("  ");
+}
+
+i = 2;
+if (idk[i] > memory){
+    idk[i] = memory;
+    swap = memory;
+    index = idk[i];
+    memory = 0;
+    
+//  index = idk[i];
+  
+  println("number",swap , "in position", index, "memory bank", memory);
+  printArray(idk);  
   println("  ");
 }
